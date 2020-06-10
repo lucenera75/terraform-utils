@@ -7,6 +7,11 @@ variable "region" {
 variable "src" {
   type = string
 }
+
+variable "output_zip_path" {
+  type = string
+}
+
 variable "lambdavars" {
   type = map
 }

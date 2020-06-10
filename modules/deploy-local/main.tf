@@ -6,7 +6,6 @@ data "archive_file" "init" {
   type        = "zip"
   source_dir  = var.src
   output_path = "${var.output_path}/${var.name}.zip"
-  # excludes = [".terraform"]
 }
 
 resource "aws_iam_policy" "lambda_logging" {

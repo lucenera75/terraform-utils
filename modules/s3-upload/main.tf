@@ -37,6 +37,6 @@ resource "aws_s3_bucket_object" "src" {
   source = "${var.output_path}/${var.name}.zip"
 
   tags = {
-    hash = filebase64sha256("${var.output_path}/${var.name}zip")
+    hash = filebase64sha256("${var.output_path}/${var.name}.zip")
   }
 }

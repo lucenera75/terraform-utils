@@ -8,7 +8,7 @@ variable "src" {
   type = string
 }
 
-variable "output_zip_path" {
+variable "output_path" {
   type = string
 }
 

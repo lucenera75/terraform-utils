@@ -2,12 +2,6 @@ provider "aws" {
     region  = var.region
 }
 
-data "archive_file" "init" {
-  type        = "zip"
-  source_dir  = var.src
-  output_path = "${var.output_path}/${var.name}.zip"
-}
-
 resource "aws_iam_policy" "lambda_logging" {
   name        = "${var.name}_iam_policy_lambda_logging"
   path        = "/"

@@ -53,7 +53,7 @@ EOF
 
 resource "aws_lambda_function" "this_lambda" {
   s3_bucket         = "${var.bucket}"
-  s3_key            = "${var.key}/${var.upload_name}"
+  s3_key            = "${var.name}/${var.upload_name}"
   function_name = var.name
   timeout = var.timeout
   memory_size = var.memory_size

@@ -4,7 +4,10 @@ variable "name" {
 variable "region" {
   type = string
 }
-variable "src" {
+variable "bucket" {
+  type = string
+}
+variable "upload_name" {
   type = string
 }
 variable "lambdavars" {
